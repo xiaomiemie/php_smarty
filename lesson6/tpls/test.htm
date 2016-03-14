@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+{html_select_date day_extra='class="demo"'}
+{html_select_time use_24_hours=true time={$smarty.now}}
+{$smarty.now}
+{$smarty.now|date_format:"%A,%B,%e %H"}
+</body>
+</html>
