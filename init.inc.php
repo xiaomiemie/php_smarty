@@ -7,8 +7,7 @@ include ROOT.'libs/Smarty.class.php';//被包含到哪里去，就是相对于�
 $smarty = new Smarty();
 $smarty->setTemplateDir('./tpls/');//设置目录
 $smarty->setCompileDir('./coms/');
-$smarty->auto_literal=false;//空白
+// $smarty->auto_literal=false;//空白
 // $smarty->left_delimiter='<!--{';
 // $smarty->right='}-->';
-
 ?>
