@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+
+
+{*{include file="test2.htm"}*}
+{extends file="test2.htm"}
+{block name=body}
+{$a=10}
+{assign var=foo value="`$a`"}
+{$foo}
+{counter start='1'}
+{counter}
+{if $a>10}
+111111
+{elseif $a=10}
+222222
+{else}
+3333333333
+{/if}
+<br>
+
+<!-- {foreach $arr as $value}
+{if $value@first}
+  <p style="color:red">{$value}</p>
+  {else}  <p style="color:blue">{$value}</p>
+{/if}
+{/foreach} -->
+<br>
+{foreach $arr as $key=>$value}
+{foreach $value as $value2}
+ {$key}--{$value2}
+{/foreach}
+{/foreach}
+{/block}
+</body>
+</html>
